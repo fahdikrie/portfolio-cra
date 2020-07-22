@@ -1,0 +1,73 @@
+.Homepage {
+    position: relative;
+    width: 100%;
+    height: auto;
+
+    color: white;
+    padding-left: 8%;
+}
+
+.Homepage h1 {
+    font-size: 6em;
+}
+
+.Homepage h2 {
+    font-size: 3em;
+}
+
+.Homepage h3 {
+    font-size: 1.8em;
+}
+
+.purple {
+    color: purple;
+}
+
+br {
+    user-select: none; /* supported by Chrome and Opera */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+@media (max-width: 768px) {
+    /* gajadiii */
+}
+
+/* ===== Header Section ===== */
+
+.Header {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+}
+
+.Header h1 {
+    margin-bottom: 25vh;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+    .Header h1 {
+        font-size: 4.5em;
+    }
+}
+
+/* ===== About Section ===== */
+
+.About {
+    height: 60vh;
+}
+
+.About .innerAbout h3 {
+    font-weight: 300;
+    width: 50%;
+}
+
+@media (max-width: 768px) {
+    .About .innerAbout h3 {
+        font-size: 1.5em;
+        width: 80%;
+    }
+}

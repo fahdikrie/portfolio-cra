@@ -1,4 +1,72 @@
+:root {
+    --color-black: #000000;
+    --color-dark-grey: #222222;
+    --color-light-grey: #333333;
+    --color-yellow: #fff000;
+    --color-pale-yellow: #faf49a;
+    --color-gold: #FFD700;
+    --color-soft-pink: #ffb7b7;
+
+    --font-rubik: 'Rubik';
+    --font-rubik-mono-one: 'Rubik Mono One'; 
+    --font-rubik-black: 'Rubik Black';
+    --font-lato: 'Lato';
+}
+
+::selection {
+    background: purple; /* WebKit/Blink Browsers */
+}
+
+::-moz-selection {
+    background: purple; /* Gecko Browsers */
+}
+
+
+html {
+    scroll-behavior: smooth;
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+  }
+  
+
+/* html {
+    height: 200vh;
+    padding: 0;
+    background-color: black;
+    overflow: hidden;
+}
+
+body #root {
+    overflow: scroll;
+} */
+/* 
 .App {
+    position: absolute;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 99vh;
+    width: 100%;
+} */
+
+/* .App h1 {
+    color: white;
+    margin-left: 10%;
+    font-size: 5em;
+} */
+
+/* canvas {
+    background-color: red;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+} */
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +103,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
