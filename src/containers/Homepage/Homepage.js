@@ -1,6 +1,10 @@
 import React from 'react';
 
 import classes from './Homepage.module.css';
+import ProjectCard from '../../components/ProjectCard/ProjectCard';
+
+import SiputPNG from '../../assets/projects/siput.png';
+
 
 const Homepage = () => {
   return (
@@ -22,21 +26,15 @@ const Homepage = () => {
         <div className={classes.MainProjects}>
           <h2>Main Projects</h2>
 
-          <div className={classes.MainProjectCard}>
-            <h3>Bruh ini benerean?</h3>
-            <p>loremipsumdolor sitamet skkdkdk dadada</p>
-          </div>
-          <div className={classes.MainProjectCard}>
-            <h3>Bruh ini benerean?</h3>
-            <p>loremipsumdolor sitamet skkdkdk dadada</p>
-          </div>
-          <div className={classes.MainProjectCard}>
-            <h3>Bruh ini benerean?</h3>
-            <p>loremipsumdolor sitamet skkdkdk dadada</p>
-          </div>
-          <div className={classes.MainProjectCard}>
-            <h3>Bruh ini benerean?</h3>
-            <p>loremipsumdolor sitamet skkdkdk dadada</p>
+          <div className={classes.MainProjectsCardWrapper}>
+            <ProjectCard 
+              img={SiputPNG}
+              name="SIPUT (Sistem Informasi Publikasi Terpadu)"
+              desc="depok 2020"/>
+            <ProjectCard 
+              img={SiputPNG}
+              name="SIPUT (Sistem Informasi Publikasi Terpadu)"
+              desc="depok 2020"/>
           </div>
         </div>
       </section>

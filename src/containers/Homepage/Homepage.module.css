@@ -5,6 +5,15 @@
 
     color: white;
     padding-left: 8%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .Homepage {
+        /* padding-left: 20%; */
+    }
 }
 
 .Homepage h1 {
@@ -13,6 +22,7 @@
 
 .Homepage h2 {
     font-size: 3em;
+    line-height: 1;
 }
 
 .Homepage h3 {
@@ -29,10 +39,6 @@ br {
     -khtml-user-select: none; /* Konqueror HTML */
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* Internet Explorer/Edge */
-}
-
-@media (max-width: 768px) {
-    /* gajadiii */
 }
 
 /* ===== Header Section ===== */
@@ -57,7 +63,7 @@ br {
 /* ===== About Section ===== */
 
 .About {
-    height: 60vh;
+    height: 70vh;
 }
 
 .About .innerAbout h3 {
@@ -66,8 +72,39 @@ br {
 }
 
 @media (max-width: 768px) {
+    .About {
+        /* height: calc(fit-content + 10vh); */
+        height: fit-content;
+        margin-bottom: 20vh;
+    }
+
     .About .innerAbout h3 {
-        font-size: 1.5em;
-        width: 80%;
+        font-size: 1.6em;
+        width: 70%;
+    }
+}
+
+/* ===== Projects Section ===== */
+
+.MainProjects{
+    /* height: ; */
+}
+
+.MainProjectsCardWrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: space-between;
+    padding-right: 10%; */
+}
+
+@media (max-width: 768px) {
+    .MainProjects {
+        font-size: 13px;
+    }
+
+    .MainProjectsCardWrapper {
+        flex-direction: column;
+        padding-right: 0px;
     }
 }

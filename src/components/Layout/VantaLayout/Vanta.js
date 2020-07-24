@@ -23,7 +23,7 @@ const VantaLayout = (props) => {
         minWidth: 200.00,
         backgroundColor: backgroundColorVanta,
         xOffset: xOffsetVanta,
-        yOffset: 0.06,
+        yOffset: 0.00,
         size: sizeVanta
       }))
     }

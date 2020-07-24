@@ -6,6 +6,7 @@ const NavigationBar = () => {
   return (
     <div className={classes.NavigationBar}>
       <ul className={classes.NavItems}>
+        <li className={classes.NavItem}>cv</li>
         <li className={classes.NavItem}>activities</li>
         <li className={classes.NavItem}>blog</li>
       </ul>

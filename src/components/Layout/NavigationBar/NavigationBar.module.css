@@ -5,11 +5,17 @@
     align-items: center;
 
     margin: 0;
-    padding: 0px 5%;
+    padding: 0px 3%;
     width: auto;
     height: 10vh;
 
     color: white;
+}
+
+@media (max-width: 768px) {
+    .NavigationBar {
+        /* padding: 0px 5%; */
+    }
 }
 
 .NavigationBar > .NavItems {
@@ -35,6 +41,6 @@
 
 @media (max-width: 768px) {
     .NavigationBar > .NavItems > .NavItem {
-        font-size: 1.2em;
+        font-size: 1.3em;
     }
 }

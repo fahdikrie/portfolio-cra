@@ -26,12 +26,26 @@ html {
     scroll-behavior: smooth;
     overflow: scroll;
     overflow-x: hidden;
-  }
+    background-color: black;
+}
+
 ::-webkit-scrollbar {
     width: 0px;  /* Remove scrollbar space */
     background: transparent;  /* Optional: just make scrollbar invisible */
-  }
-  
+}
+
+h1, h2, h3, p, li {
+    cursor: default;
+}
+
+img {
+    /* user-drag: none; */
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
 
 /* html {
     height: 200vh;
