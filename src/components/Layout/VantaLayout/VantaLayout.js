@@ -1,7 +1,6 @@
 import React from 'react';
 
-import Vanta from './Vanta';
-
+import Vanta from './components/Vanta/Vanta';
 
 const VantaLayout = () => {
   // Declare a new state variable with the "useState" Hook
