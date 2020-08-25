@@ -2,9 +2,7 @@ import React from 'react';
 
 import classes from './Homepage.module.css';
 import ProjectCard from '../../components/ProjectCard/ProjectCard';
-
-import SiputPNG from '../../assets/projects/siput.png';
-
+import { Projects } from '../../components/ProjectCard/ProjectData';
 
 const Homepage = () => {
   return (
@@ -27,14 +25,13 @@ const Homepage = () => {
           <h2>Main Projects</h2>
 
           <div className={classes.MainProjectsCardWrapper}>
-            <ProjectCard 
-              img={SiputPNG}
-              name="SIPUT (Sistem Informasi Publikasi Terpadu)"
-              desc="depok 2020"/>
-            <ProjectCard 
-              img={SiputPNG}
-              name="SIPUT (Sistem Informasi Publikasi Terpadu)"
-              desc="depok 2020"/>
+            {Projects.map(el => (
+              <ProjectCard
+                image={el.image}
+                name={el.name}
+                desc={el.desc}
+                stacks={el.stacks} />
+            ))}
           </div>
         </div>
       </section>

@@ -2,17 +2,19 @@ import React from 'react';
 
 import classes from './ProjectCard.module.css';
 
-const ProjectCard = (props) => {
+const ProjectCard = ({ image, name, desc, stacks }) => {
   return (
     <div className={classes.ProjectCard}>
       <div className={classes.ProjectCardHeader}>
-        <img className={classes.ProjectCardImg} src={props.img} alt='siput'></img>
-        <h3>{props.name}</h3>
-        <p>{props.desc}</p>
+        <img className={classes.ProjectCardImg} src={image} alt='siput'></img>
+        <div className={classes.ProjectCardTitle}>
+          <h3>{name}</h3>
+          <p>{desc}</p>
+        </div>
       </div>
 
       <div className={classes.ProjectCardStacks}>
-        <p>React | Django | HTML | CSS</p>
+        <p>{stacks.join(" | ")}</p>
       </div>
     </div>
   )

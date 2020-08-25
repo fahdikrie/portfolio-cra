@@ -21,7 +21,7 @@ const VantaLayout = () => {
             <Vanta
             sizeVanta={0.70}
             backgroundColorVanta={0x0}
-            xOffsetVanta={0.45}
+            xOffsetVanta={0.5}
             />
           :
             <Vanta
