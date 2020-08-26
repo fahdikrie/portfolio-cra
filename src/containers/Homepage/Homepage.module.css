@@ -8,6 +8,7 @@
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 768px) {
@@ -90,10 +91,16 @@ br {
     /* height: ; */
 }
 
+.MainProjects h2 {
+    line-height: 1.5em;
+}
+
 .MainProjectsCardWrapper {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    /* background-color: rgba(0, 0, 0, 0.7);
+    padding: 0% 0% 3%; */
     /* justify-content: space-between;
     padding-right: 10%; */
 }

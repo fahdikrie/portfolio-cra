@@ -22,13 +22,15 @@ const Homepage = () => {
 
       <section className={classes.Projects}>
         <div className={classes.MainProjects}>
-          <h2>Main Projects</h2>
+          <h2>Projects I've Participated in<span className={classes.purple}>.</span></h2>
 
           <div className={classes.MainProjectsCardWrapper}>
             {Projects.map(el => (
               <ProjectCard
+                key={el.id}
                 image={el.image}
                 name={el.name}
+                time={el.time}
                 desc={el.desc}
                 stacks={el.stacks} />
             ))}
