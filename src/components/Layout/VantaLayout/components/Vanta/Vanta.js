@@ -19,7 +19,7 @@ const VantaLayout = (props) => {
         el: myRef.current,
         mouseControls: true,
         touchControls: true,
-        gyroControls: true,
+        gyroControls: false,
         minHeight: 200.00,
         minWidth: 200.00,
         backgroundColor: backgroundColorVanta,
