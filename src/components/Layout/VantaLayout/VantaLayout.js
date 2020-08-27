@@ -19,7 +19,7 @@ const VantaLayout = () => {
 
   return width < breakpoint ?
             <Vanta
-              sizeVanta={1.70}
+              sizeVanta={0}
               backgroundColorVanta={0x0}
               xOffsetVanta={0.70}
             />

@@ -18,7 +18,7 @@ const VantaLayout = (props) => {
       setVantaEffect(HALO({
         el: myRef.current,
         mouseControls: true,
-        touchControls: false,
+        touchControls: true,
         gyroControls: false,
         minHeight: 200.00,
         minWidth: 200.00,
