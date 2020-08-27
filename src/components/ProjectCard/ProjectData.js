@@ -1,4 +1,3 @@
-import React from 'react';
 import SiputPNG from '../../assets/projects/siput.png';
 
 const strongify = (string) => {
