@@ -14,8 +14,8 @@ const Homepage = () => {
 
       <section className={classes.About}>
         <div className={classes.innerAbout}>
-        <h3><span>A 19 years old sophomore student majoring Computer Science at the University of Indonesia</span> <br/><br/>
-        <span>Fahdii is very passionate when it comes to taking nap and listening to music</span> <br/><br/>
+        <h3><span>A 19 years old sophomore student majoring CS at the University of Indonesia</span> <br/><br/>
+        <span>Fahdii is very passionate when it comes to taking nap and watching movies</span> <br/><br/>
         <span>He also loves spending his time watching movies, especially the thriller/mystery ones</span></h3>
         </div>
       </section>

@@ -31,6 +31,7 @@ export const Projects = [
           `${strongify('issue posting feature')}, ${strongify('improved functionality')}, and ${strongify('revamped the front-end')}.`,
     stacks: [
       "react",
+      "react-hooks",
       "redux",
       "styled-components",
       "django-rest-api"
