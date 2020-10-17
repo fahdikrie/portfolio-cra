@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import './fonts/fonts.css';
 
 import Layout from './components/Layout/Layout';
 import Homepage from './containers/Homepage/Homepage';

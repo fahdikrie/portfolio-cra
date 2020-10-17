@@ -1,11 +1,15 @@
 .ProjectCard {
-    /* background-color: rgba(0, 0, 0, 0.7); */
-    width: 38%;
+    width: 40%;
     margin: 15px 50px 15px 25px;
-    /* border-radius: 10px; */
 
     line-height: 0;
     font-size: 16px;
+}
+
+@media (min-width: 1920px) {
+    .ProjectCard {
+        font-size: 24px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -13,21 +17,29 @@
         width: 80%;
         display: block;
         margin-right: auto;
+        margin-left: auto;
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 525px) {
+    .ProjectCard {
         font-size: 13px;
     }
 }
 
-@media (max-width: 500px) {
-    .ProjectCard {
-        font-size: 11px;
-    }
+.ProjectCardHeader {
+    padding: 0px 10px 5px 0px;
+    word-wrap: break-word;
 }
 
-.ProjectCardHeader {
-    /* background-color: rgba(0, 0, 0, 0.5); */
-    padding: 0px 10px 5px 0px;
-    /* border-radius: 10px; */
-    word-wrap: break-word;
+.ProjectCardImg {
+    border-radius: 3px;
+}
+
+img.ProjectCardImg:hover {
+    transform: scale(1.01);
 }
 
 .ProjectCardHeader .ProjectCardImg {
@@ -39,6 +51,7 @@
 
 .ProjectCardHeader .ProjectCardTitle {
     padding: 0px 3px 5px;
+    font-family: 'Ubuntu';
 }
 
 .ProjectCardHeader h3 {
@@ -49,6 +62,7 @@
 .ProjectCardHeader h4 {
     margin: -10px 0px 10px;
     line-height: 1.5;
+    font-family: 'San Francisco Pro Bold';
     font-style: italic;
     color: rgb(187, 25, 187);
 }
@@ -59,11 +73,9 @@
 }
 
 .ProjectCardStacks {
-    /* background-color: rgba(106, 0, 106, 0.544); */
     padding: 0px 10px 5px 3px;
     text-align: left;
     letter-spacing: 1px;
-    /* border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px; */
-    line-height: 16px;
+    line-height: 1.5;
+    font-family: 'San Francisco Pro Regular';
 }

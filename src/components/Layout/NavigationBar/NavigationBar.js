@@ -8,7 +8,7 @@ const NavigationBar = () => {
       <ul className={classes.NavItems}>
         <li className={classes.NavItem}>cv</li>
         <li className={classes.NavItem}>activities</li>
-        <li className={classes.NavItem}>blog</li>
+        <li className={classes.NavItem}>journal</li>
       </ul>
     </div>
   )

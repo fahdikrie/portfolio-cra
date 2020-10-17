@@ -2,11 +2,20 @@ import React from 'react';
 
 import classes from './ProjectCard.module.css';
 
-const ProjectCard = ({ image, name, time, desc, stacks }) => {
+const ProjectCard = ({
+  image,
+  name,
+  time,
+  desc,
+  stacks
+}) => {
   return (
     <div className={classes.ProjectCard}>
       <div className={classes.ProjectCardHeader}>
-        <img className={classes.ProjectCardImg} src={image} alt='siput'></img>
+        <img
+          className={classes.ProjectCardImg}
+          src={image}
+          alt='siput'/>
         <div className={classes.ProjectCardTitle}>
           <h3>{name}</h3>
           <h4>{time}</h4>

@@ -1,9 +1,11 @@
 import SiputPNG from '../../assets/projects/siput.png';
+import PmbPNG from '../../assets/projects/pmb.png';
 
 const strongify = (string) => {
   return(
     `<strong
-      style="text-decoration: underline;
+      style="font-family: 'Ubuntu Bold';
+             text-decoration: none;
              text-decoration-color: purple;">
       ${string}</strong>`
 )};
@@ -24,7 +26,7 @@ export const Projects = [
   },
   {
     id: 2,
-    image: SiputPNG,
+    image: PmbPNG,
     name: "Website Pembinaan Mahasiswa Baru (Web PMB) — Ristek",
     time: "July 2020 – Present",
     desc: `Appointed as the project's PIC. Implemented new features, such as ${strongify('push notification')} using Django built-in SMTP, ` +
