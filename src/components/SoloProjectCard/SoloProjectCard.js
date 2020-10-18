@@ -20,8 +20,7 @@ const SoloProjectCard = ({
           <img
             className={classes.SoloProjectCardImg}
             src={image}
-            alt='siput'
-            width="100%"/>
+            alt='siput'/>
         </a>
         <div className={classes.SoloProjectCardTitle}>
 

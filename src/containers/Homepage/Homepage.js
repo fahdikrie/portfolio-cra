@@ -28,7 +28,6 @@ const Homepage = (props) => {
   }, []);
 
   const settings = {
-    lazyload: true,
     nav: false,
     mouseDrag: true,
     loop: false,
@@ -40,7 +39,7 @@ const Homepage = (props) => {
         items: 2
       },
       768: {
-        items: 4
+        items: 3
       },
     }
   };
@@ -55,7 +54,7 @@ const Homepage = (props) => {
 
   const numberOfItems = (
     width > 768
-      ? 4
+      ? 3
       : width > 500
         ? 2
         : 1
@@ -126,7 +125,10 @@ const Homepage = (props) => {
                 ))}
               </TinySlider>
               <img
-                className={`${classes.ArrowRight} ${hideArrowRight ? classes.hide : ''} ${displayNone ? classes.none : ''}`}
+                className={
+                  `${classes.ArrowRight}
+                   ${hideArrowRight ? classes.hide : ''}
+                   ${displayNone ? classes.none : ''}`}
                 src={arrowIcon}
                 alt='arrow-right'
                 onClick={() => onGoTo('next')}

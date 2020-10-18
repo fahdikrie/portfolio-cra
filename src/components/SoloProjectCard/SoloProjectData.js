@@ -1,4 +1,9 @@
 import SiputPNG from '../../assets/projects/siput.png';
+import PmbPNG from '../../assets/projects/pmb.png';
+import BadisveryfirstPNG from '../../assets/projects/badisveryfirst.png';
+import Badisveryown0PNG from '../../assets/projects/badisveryown0.png';
+import Badisveryown1PNG from '../../assets/projects/badisveryown1.png';
+import BudayaKBLitePNG from '../../assets/projects/budayakblite.png';
 
 // const strongify = (string) => {
 //   return(
@@ -15,7 +20,7 @@ import SiputPNG from '../../assets/projects/siput.png';
 export const SoloProjects = [
   {
     id: 1,
-    image: SiputPNG,
+    image: BadisveryfirstPNG,
     name: "BudayaKBLite v1.0",
     repo: "https://github.com/fahdikrie/budayakblite-badi",
     url:  "",
@@ -29,7 +34,7 @@ export const SoloProjects = [
   },
   {
     id: 2,
-    image: SiputPNG,
+    image: Badisveryown0PNG,
     name: "BudayaKBLite v2.0",
     repo: "https://github.com/fahdikrie/budayakblite-badi",
     url:  "",
@@ -43,7 +48,7 @@ export const SoloProjects = [
   },
   {
     id: 3,
-    image: SiputPNG,
+    image: Badisveryown1PNG,
     name: "BudayaKBLite v3.0",
     repo: "https://github.com/fahdikrie/budayakblite-badi",
     url:  "",
@@ -57,7 +62,7 @@ export const SoloProjects = [
   },
   {
     id: 4,
-    image: SiputPNG,
+    image: BudayaKBLitePNG,
     name: "BudayaKBLite v3.0",
     repo: "https://github.com/fahdikrie/budayakblite-badi",
     url:  "",
@@ -85,7 +90,7 @@ export const SoloProjects = [
   },
   {
     id: 6,
-    image: SiputPNG,
+    image: PmbPNG,
     name: "BudayaKBLite v3.0",
     repo: "https://github.com/fahdikrie/budayakblite-badi",
     url:  "",

@@ -218,10 +218,14 @@ br {
 }
 
 .SwipeLeft {
+    color: white;
     display: none;
     align-items: center;
     width: fit-content;
     position: relative;
+    z-index: 9999;
+
+    opacity: 100%;
     left: 0px;
     animation-name: example;
     animation-duration: 1.5s;
@@ -269,7 +273,6 @@ br {
 .TechStacks h2 {
     font-size: 2.5em;
     line-height: 1.25;
-    margin: 06*************455++..........;
 }
 
 /* ===== Comfrotable Tech Stacks Section ===== */
