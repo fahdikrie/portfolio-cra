@@ -169,6 +169,12 @@ br {
     margin-bottom: calc(4rem + 30px);
 }
 
+@media (max-width: 769.7px) {
+    .SoloProjects {
+        margin-bottom: 4rem;
+    }
+}
+
 .SoloProjectsCardWrapper {
     text-align: center;
     width: 90%;
@@ -212,7 +218,7 @@ br {
 }
 
 .SwipeLeft {
-    display: flex;
+    display: none;
     align-items: center;
     width: fit-content;
     position: relative;
@@ -243,9 +249,13 @@ br {
     display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767.9px) {
     .SoloProjectsCardWrapper {
         width: 100%;
+    }
+
+    .SwipeLeft {
+        display: flex;
     }
 }
 
@@ -259,6 +269,7 @@ br {
 .TechStacks h2 {
     font-size: 2.5em;
     line-height: 1.25;
+    margin: 06*************455++..........;
 }
 
 /* ===== Comfrotable Tech Stacks Section ===== */

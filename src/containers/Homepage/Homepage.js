@@ -132,7 +132,7 @@ const Homepage = (props) => {
                 onClick={() => onGoTo('next')}
               />
           </div>
-          <div className={`${classes.SwipeLeft} ${!displayNone ? classes.none : ''}`}>
+          <div className={`${classes.SwipeLeft}`}>
             <img
               src={swipeLeft}
               alt='swipe-left'
