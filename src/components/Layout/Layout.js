@@ -7,7 +7,7 @@ import VantaLayout from './VantaLayout/VantaLayout';
 const Layout = (props) => {
   return (
     <Auxiliary>
-      {/* <VantaLayout/> */}
+      <VantaLayout/>
       <NavigationBar/>
       {props.children}
     </Auxiliary>

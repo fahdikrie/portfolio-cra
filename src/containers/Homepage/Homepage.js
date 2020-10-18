@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import TinySlider from "tiny-slider-react";
 
 import classes from './Homepage.module.css';
@@ -10,6 +10,21 @@ import { SoloProjects } from '../../components/SoloProjectCard/SoloProjectData';
 import arrowIcon from '../../assets/chevron-arrow.svg';
 
 const Homepage = (props) => {
+
+  const [displayIndex, setDisplayIndex] = useState(1);
+  // Declare a new state variable with the "useState" Hook
+  const [width, setWidth] = React.useState(window.innerWidth);
+
+  useEffect(() => {
+    /* Inside of a "useEffect" hook add an event listener that updates
+        the "width" state variable when the window size changes */
+    window.addEventListener("resize", () => setWidth(window.innerWidth));
+
+    /* passing an empty array as the dependencies of the effect will cause this
+        effect to only run when the component mounts, and not each time it updates.
+        We only want the listener to be added once */
+  }, []);
+
   const settings = {
     lazyload: true,
     nav: false,
@@ -29,7 +44,23 @@ const Homepage = (props) => {
   };
 
   let ts = null;
-  const onGoTo = dir => ts.slider.goTo(dir);
+  const onGoTo = dir => {
+    ts.slider.goTo(dir);
+    console.log(ts.slider.getInfo())
+    let index = ts.slider.getInfo().displayIndex;
+    setDisplayIndex(index)
+  }
+
+  const numberOfItems = (
+    width > 768
+      ? 4
+      : width > 500
+        ? 2
+        : 1
+  );
+  const maxDisplayIndex = SoloProjects.length - numberOfItems + 1;
+  const hideArrowLeft = displayIndex === 1;
+  const hideArrowRight = displayIndex === maxDisplayIndex;
 
   return (
     <div className={classes.Homepage}>
@@ -68,7 +99,7 @@ const Homepage = (props) => {
 
           <div className={classes.SoloProjectsCardWrapper}>
             <img
-              className={classes.ArrowLeft}
+              className={`${classes.ArrowLeft} ${hideArrowLeft ? classes.hide : ''}`}
               src={arrowIcon}
               alt='arrow-left'
               onClick={() => onGoTo('prev')}
@@ -92,13 +123,28 @@ const Homepage = (props) => {
                 ))}
               </TinySlider>
               <img
-              className={classes.ArrowRight}
-              src={arrowIcon}
+                className={`${classes.ArrowRight} ${hideArrowRight ? classes.hide : ''}`}
+                src={arrowIcon}
                 alt='arrow-right'
                 onClick={() => onGoTo('next')}
               />
           </div>
         </div>
+      </section>
+
+      <section className={classes.TechStacks}>
+        {/* <div className={classes.TechStacksComfortable}>
+          <h2>Stacks/Frameworks I've used in My Projects<span className={classes.purple}>.</span></h2>
+        </div>
+        <div className={classes.ToolsUsed}>
+          <h2>Tools that I Frequently Use<span className={classes.purple}>.</span></h2>
+        </div> */}
+        {/* <div className={classes.TechStacksUsed}>
+          <h2>Stacks That I'm Still <br/> Working On To Get Better<span className={classes.purple}>.</span></h2>
+        </div>
+        <div className={classes.ToolsUsed}>
+          <h2>Tools That I'm Using Frequently<span className={classes.purple}>.</span></h2>
+        </div> */}
       </section>
     </div>
   )

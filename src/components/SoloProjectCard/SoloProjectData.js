@@ -1,13 +1,13 @@
 import SiputPNG from '../../assets/projects/siput.png';
 
-const strongify = (string) => {
-  return(
-    `<strong
-      style="text-decoration: underline;
-             text-decoration-color: purple;
-             font-style: italic;">
-      ${string}</strong>`
-)};
+// const strongify = (string) => {
+//   return(
+//     `<strong
+//       style="text-decoration: underline;
+//              text-decoration-color: purple;
+//              font-style: italic;">
+//       ${string}</strong>`
+// )};
 
 // budayakblite, pokedex, badisveryown-1, badisveryown-2, badisveryown-3
 // id, image, title, repo, url (opt), time, desc, stacks

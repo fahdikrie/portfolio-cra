@@ -112,10 +112,10 @@ br {
 
 .Projects {
     width: 100%;
-    margin-bottom: 10rem
 }
 
 .Projects h2 {
+    font-size: 3.5em;
     line-height: 1.5em;
     margin: 30px 0px;
 }
@@ -156,7 +156,7 @@ br {
 
 .SoloProjects {
     width: 100%;
-    margin-bottom: 4rem;
+    margin-bottom: calc(4rem + 30px);
 }
 
 .SoloProjectsCardWrapper {
@@ -190,8 +190,42 @@ br {
     transform: rotate(180deg);
 }
 
+.hide {
+    visibility: hidden;
+}
+
 @media (max-width: 768px) {
     .SoloProjectsCardWrapper {
         width: 100%;
     }
+}
+
+/* ===== Tech Stacks Section ===== */
+.TechStacks {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.TechStacks h2 {
+    font-size: 2.5em;
+    line-height: 1.25;
+}
+
+/* ===== Comfrotable Tech Stacks Section ===== */
+.TechStacksComfortable {
+    width: 100%;
+    flex-basis: 70%;
+}
+
+/* ===== Used Tech Stacks Section ===== */
+/* .TechStacksUsed {
+    width: 100%;
+    flex-basis: 50%;
+} */
+
+/* ===== Used Tool Stacks Section ===== */
+.ToolsUsed {
+    width: 100%;
+    flex-basis: 30%;
 }
