@@ -8,12 +8,14 @@ import SoloProjectCard from '../../components/SoloProjectCard/SoloProjectCard';
 import { SoloProjects } from '../../components/SoloProjectCard/SoloProjectData';
 
 import arrowIcon from '../../assets/chevron-arrow.svg';
+import swipeLeft from '../../assets/swipe-left.svg';
 
 const Homepage = (props) => {
 
   const [displayIndex, setDisplayIndex] = useState(1);
   // Declare a new state variable with the "useState" Hook
   const [width, setWidth] = React.useState(window.innerWidth);
+  const breakpoint = 768;
 
   useEffect(() => {
     /* Inside of a "useEffect" hook add an event listener that updates
@@ -31,7 +33,7 @@ const Homepage = (props) => {
     mouseDrag: true,
     loop: false,
     items: 1,
-    gutter: 5,
+    gutter: 3,
     controls: false,
     responsive: {
       500: {
@@ -61,6 +63,7 @@ const Homepage = (props) => {
   const maxDisplayIndex = SoloProjects.length - numberOfItems + 1;
   const hideArrowLeft = displayIndex === 1;
   const hideArrowRight = displayIndex === maxDisplayIndex;
+  const displayNone = width < breakpoint;
 
   return (
     <div className={classes.Homepage}>
@@ -95,11 +98,11 @@ const Homepage = (props) => {
         </div>
 
         <div className={classes.SoloProjects}>
-          <h2>Selected Individual Projects<span className={classes.purple}>.</span></h2>
+          <h2>Selected Solo Projects<span className={classes.purple}>.</span></h2>
 
           <div className={classes.SoloProjectsCardWrapper}>
             <img
-              className={`${classes.ArrowLeft} ${hideArrowLeft ? classes.hide : ''}`}
+              className={`${classes.ArrowLeft} ${hideArrowLeft ? classes.hide : ''} ${displayNone ? classes.none : ''}`}
               src={arrowIcon}
               alt='arrow-left'
               onClick={() => onGoTo('prev')}
@@ -123,11 +126,18 @@ const Homepage = (props) => {
                 ))}
               </TinySlider>
               <img
-                className={`${classes.ArrowRight} ${hideArrowRight ? classes.hide : ''}`}
+                className={`${classes.ArrowRight} ${hideArrowRight ? classes.hide : ''} ${displayNone ? classes.none : ''}`}
                 src={arrowIcon}
                 alt='arrow-right'
                 onClick={() => onGoTo('next')}
               />
+          </div>
+          <div className={`${classes.SwipeLeft} ${!displayNone ? classes.none : ''}`}>
+            <img
+              src={swipeLeft}
+              alt='swipe-left'
+            />
+            <h3>Swipe Left!</h3>
           </div>
         </div>
       </section>
@@ -135,10 +145,10 @@ const Homepage = (props) => {
       <section className={classes.TechStacks}>
         {/* <div className={classes.TechStacksComfortable}>
           <h2>Stacks/Frameworks I've used in My Projects<span className={classes.purple}>.</span></h2>
-        </div>
+        </div> */}
         <div className={classes.ToolsUsed}>
           <h2>Tools that I Frequently Use<span className={classes.purple}>.</span></h2>
-        </div> */}
+        </div>
         {/* <div className={classes.TechStacksUsed}>
           <h2>Stacks That I'm Still <br/> Working On To Get Better<span className={classes.purple}>.</span></h2>
         </div>

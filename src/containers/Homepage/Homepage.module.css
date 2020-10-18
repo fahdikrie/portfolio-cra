@@ -1,3 +1,7 @@
+html {
+    overflow-x: hidden;
+}
+
 .Homepage {
     position: relative;
     width: calc(100% - 8%);
@@ -132,6 +136,12 @@ br {
     }
 }
 
+@media (max-width: 525px) {
+    .Projects {
+        font-size: 11px;
+    }
+}
+
 /* ===== Main Projects Section ===== */
 
 .MainProjects{
@@ -190,8 +200,47 @@ br {
     transform: rotate(180deg);
 }
 
+.SwipeLeft img {
+    width: 30px;
+}
+
+.SwipeLeft h3 {
+    font-family: 'Ubuntu';
+    font-size: 16px;
+    margin: 0;
+    margin-left: 10px;
+}
+
+.SwipeLeft {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    position: relative;
+    left: 0px;
+    animation-name: example;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes example {
+    0%   {left: 100px; opacity: 0;}
+    100% {left: 0px; opacity: 100%;}
+}
+
+@media (min-width: 525px) {
+    @keyframes example {
+        0%   {left: 30%; opacity: 0;}
+        100% {left: 0px; opacity: 100%;}
+    }
+}
+
 .hide {
     visibility: hidden;
+}
+
+.none {
+    display: none;
 }
 
 @media (max-width: 768px) {
